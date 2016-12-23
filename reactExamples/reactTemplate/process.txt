@@ -1,0 +1,10 @@
+//global installs:
+npm install -g react webpack-dev-server
+
+//Init json
+npm init -Y
+
+//Installs (S = --save, D = --save-dev):
+npm i -S react react-dom
+npm i -D babel-core babel-loader babel-preset-es2015 babel-preset-react react-hot-loader webpack webpack-dev-server
+
