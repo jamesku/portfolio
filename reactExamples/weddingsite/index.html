@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>React ToDos App</title>
+    
+    
+<link href="node_modules/react-mfb/mfb.css" rel="stylesheet"> 
+    
+<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+<link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <!--file is being encoded as UTF-8 with BOM (I believe), which is pushing this element to the body, so i dynamically add it later on to make it work until i can figure it out
+    
+<script> var div = document.createElement("div");
+        div.id="headMenu";
+        document.getElementsByTagName('head')[0].appendChild(div);
+    </script>
+    -->
+    <div id="app" />   
+
+    </body>
+
+<script src= "./bundle.js"></script>
+   
+   <!-- <script>
+    
+    (function($) {
+    var element = $('.follow-scroll'),
+        originalY = element.offset().top;
+    
+    // Space between element and top of screen (when scrolling)
+    var topMargin = 20;
+    
+    // Should probably be set in CSS; but here just for emphasis
+    element.css('position', 'relative');
+    
+    $(window).on('scroll', function(event) {
+        var scrollTop = $(window).scrollTop();
+        
+        element.stop(false, false).animate({
+            top: scrollTop < originalY
+                    ? 0
+                    : scrollTop - originalY + topMargin
+        }, 300);
+    });
+})(jQuery);
+        
+    </script>
+    -->
+    <footer>
+    
+    </footer>
+    
+</html>
