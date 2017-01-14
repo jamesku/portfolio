@@ -1,40 +1,53 @@
 import React from 'react';
 import {Menu, MainButton, ChildButton} from 'react-mfb';
 
+
 export default class FloatingMenu extends React.Component {
   render(){
       
     var effect = 'zoomin',
-    pos = 'tr',
+    pos = 'tl',
     method = 'hover';
     return (
-      
     <Menu effect={effect} method={method} position={pos}>
-      <MainButton iconResting="ion-plus-round" iconActive="ion-close-round" />
+    <MainButton onClick={()=> this.handleClick()} iconResting="ion-plus-round" iconActive="ion-close-round" resetComponet={this.setComponent.bind(this)} />
       <ChildButton
-        //onClick={function(e){ console.log(e); e.preventDefault(); }}
-        icon="ion-social-github"
-        label="Date/Time/Place"
-        href="https://github.com/nobitagit/react-material-floating-button/" />
+        onClick={() => this.setComponent(1)}
+        icon="ion-heart"
+        label="Times & Places"
+        />
       <ChildButton
-        icon="ion-social-octocat"
+        onClick={() => this.setComponent(2)}
+        icon="ion-email"
         label="RSVP"
-        href="https://github.com/nobitagit" />
+        />
       <ChildButton
-        icon="ion-social-twitter"
-        label="Contribute"
-        href="http://twitter.com/share?text=Amazing Google Inbox style material floating menu as a React component!&url=http://nobitagit.github.io/react-material-floating-button/&hashtags=material,menu,reactjs,react,component" />
+        onClick={() => this.setComponent(3)}
+        icon="ion-bag"
+        label="Registry"
+        />
+      <ChildButton
+        onClick={() => this.setComponent(4)}
+        icon="ion-home"
+        label="Accomodations"
+        />
     </Menu>
         );
 
   }
-    componentDidMount(){
-        console.log("hel");
-        window.addEventListener('scroll', this.handleScroll);
-    }
-    handleScroll(event){
-        
-        console.log("hellosc");
+
+ handleClick(){
+         console.log("yoyoyoyoyo")
+         this.props.setSelection(0);
+    }  
+
+    setComponent(x){
+        console.log("got here " +x);
+        if(x>0){
+        this.props.setSelection(x);
+        }
+        else{
+            this.props.setSelection(0);
+        }
     }
 }
-
