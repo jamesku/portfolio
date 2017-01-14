@@ -35,8 +35,6 @@ export default class TheContainer extends React.Component {
     </div>
     )
   }
-
-
     handleClick(){
         {this.props.setSelection(0)};
     }
