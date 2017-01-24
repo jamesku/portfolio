@@ -9,7 +9,7 @@ export default class Details extends React.Component {
             
     return (        
         <div>  
-            <h4>Mass</h4>
+            <h4>Mass at 4:00</h4>
             <h3>Our Lady of Guadalupe</h3>
             <h4><a href ="https://www.google.com/maps/place/1206+E+9th+St,+Austin,+TX+78702/@30.2671191,-97.7296921,17z/data=!4m13!1m7!3m6!1s0x8644b5ba5cf3bcd7:0x76ad782a98491852!2s1206+E+9th+St,+Austin,+TX+78702!3b1!8m2!3d30.2671191!4d-97.7275034!3m4!1s0x8644b5ba5cf3bcd7:0x76ad782a98491852!8m2!3d30.2671191!4d-97.7275034">1206 E 9th Street</a></h4>
      <br/>

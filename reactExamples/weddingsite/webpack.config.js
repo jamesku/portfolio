@@ -45,7 +45,7 @@ module.exports = {
         },
     //add a reload as you go and a compile only if no errors plugin
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
+        
         new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
         'process.env': {
